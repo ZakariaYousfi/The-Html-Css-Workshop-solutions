@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .labels {
+            font-weight:bold;
+            font-size:22px;
+            font-family:Arial,sans-serif;
+            line-height: 2;
+        }
+        textarea {
+            border:0;
+            border-bottom:1px solid gray;
+            padding:10px 0;
+            width:200px;
+        }
+        #button{
+            margin-top:5px;
+            border : 2px solid green;
+            border-radius: 5px;
+            background-color:floralwhite;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="#" align="center">
+        <fieldset style="display:inline-block">
+            <label class="labels" for="Title">Title:</label><br>
+            <select id="Title">
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+            </select><br>
+            <label class="labels"  for="FirstName">First name:</label><br>
+            <input type="text" name="FirstName" id="FirstName" required><br>
+            <label class="labels"  for="LastName">Last name:</label><br>
+            <input type="text" name="LastName" id="LastName" required><br>
+            <label class="labels"  for="Message">Message:</label><br>
+            <textarea required name="Message" id="Message" rows="5" cols="20"></textarea><br>
+            <input id="button" type="Submit" id="Submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
